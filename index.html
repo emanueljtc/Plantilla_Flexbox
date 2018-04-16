@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Plantilla Flex-Box</title>
+    <style>
+        li #texto {
+            font-size: 40px;
+            text-align: center;
+            font-size: 26px;
+            background: #ffffff4d;
+            width: 200px;
+            height: auto;
+            margin-left: 43%;
+            top: 50%;
+            position: relative;
+        }
+    </style>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/fontello.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <header>
+            <div class="logo">
+                <img src="img/logo.png" width="150" alt="">
+                <a href="#">Ing. Torres C.</a>
+            </div>
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Conocenos</a>
+                <a href="#">Proyectos</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </header>
+        <div class="wrap">
+            <button onclick="prev()" class="button_left">&laquo;</button>
+            <div class="scroller">
+                <ul class="items">
+                    <li class="item" style="background-image:url(img/1.jpeg);">
+                        <div id="texto">TU TEXTO</div>
+                    </li>
+                    <li class="item" style="background-image:url(https://farm3.staticflickr.com/2937/14371160993_186df4a083_b.jpg);">
+                        <div id="texto">TU TEXTO</div>
+                    </li>
+                    <li class="item" style="background-image:url(https://farm3.staticflickr.com/2914/14185397280_e51c40b1df_b.jpg);">
+                        <div id="texto">TU TEXTO</div>
+                    </li>
+                </ul>
+            </div>
+            <button onclick="next()" class="button_right">&raquo;</button>
+        </div>
+        <section class="main">
+            <article>
+                <h2 class="titulo">Titulo Articulo</h2>
+                <p>Eu excepteur sunt exercitation consectetur excepteur laborum exercitation enim dolore velit nulla est do. Proident ad culpa amet dolor aliqua incididunt laboris laborum elit. Lorem consequat elit cupidatat irure esse officia duis enim
+                    laborum do nulla aliqua duis. Ex non ea minim deserunt commodo tempor exercitation velit consequat id pariatur cupidatat cupidatat nisi. Anim cillum consectetur ad sint veniam et aliquip enim non laborum laboris. Cillum velit mollit
+                    tempor excepteur adipisicing. Veniam dolore deserunt excepteur anim. Occaecat Lorem proident labore labore est ex commodo mollit occaecat incididunt enim adipisicing laboris laborum. Et laborum laborum eu minim dolore amet. Ex id nostrud
+                    Lorem laboris eu magna sunt reprehenderit ut pariatur laborum culpa ea. Nisi anim id eiusmod do laboris anim aliqua esse Lorem mollit. Sit pariatur commodo amet pariatur culpa excepteur ut voluptate sit. Eiusmod duis culpa et amet
+                    proident ullamco do aliquip ipsum in. Consequat tempor anim incididunt dolor exercitation est. Aute est ea deserunt deserunt nisi aliquip ut laboris. Fugiat non exercitation duis do enim sunt voluptate nisi nostrud ut quis. Quis consequat
+                    sint minim ullamco. Fugiat mollit in Lorem officia in. Cupidatat in proident velit anim sit.</p>
+            </article>
+
+            <article>
+                <h2 class="titulo">Titulo Articulo II</h2>
+                <p>Eu excepteur sunt exercitation consectetur excepteur laborum exercitation enim dolore velit nulla est do. Proident ad culpa amet dolor aliqua incididunt laboris laborum elit. Lorem consequat elit cupidatat irure esse officia duis enim
+                    laborum do nulla aliqua duis. Ex non ea minim deserunt commodo tempor exercitation velit consequat id pariatur cupidatat cupidatat nisi. Anim cillum consectetur ad sint veniam et aliquip enim non laborum laboris. Cillum velit mollit
+                    tempor excepteur adipisicing. Veniam dolore deserunt excepteur anim. Occaecat Lorem proident labore labore est ex commodo mollit occaecat incididunt enim adipisicing laboris laborum. Et laborum laborum eu minim dolore amet. Ex id nostrud
+                    Lorem laboris eu magna sunt reprehenderit ut pariatur laborum culpa ea. Nisi anim id eiusmod do laboris anim aliqua esse Lorem mollit. Sit pariatur commodo amet pariatur culpa excepteur ut voluptate sit. Eiusmod duis culpa et amet
+                    proident ullamco do aliquip ipsum in. Consequat tempor anim incididunt dolor exercitation est. Aute est ea deserunt deserunt nisi aliquip ut laboris. Fugiat non exercitation duis do enim sunt voluptate nisi nostrud ut quis. Quis consequat
+                    sint minim ullamco. Fugiat mollit in Lorem officia in. Cupidatat in proident velit anim sit.</p>
+            </article>
+            <article>
+                <h2 class="titulo">Titulo Articulo III</h2>
+                <p>Eu excepteur sunt exercitation consectetur excepteur laborum exercitation enim dolore velit nulla est do. Proident ad culpa amet dolor aliqua incididunt laboris laborum elit. Lorem consequat elit cupidatat irure esse officia duis enim
+                    laborum do nulla aliqua duis. Ex non ea minim deserunt commodo tempor exercitation velit consequat id pariatur cupidatat cupidatat nisi. Anim cillum consectetur ad sint veniam et aliquip enim non laborum laboris. Cillum velit mollit
+                    tempor excepteur adipisicing. Veniam dolore deserunt excepteur anim. Occaecat Lorem proident labore labore est ex commodo mollit occaecat incididunt enim adipisicing laboris laborum. Et laborum laborum eu minim dolore amet. Ex id nostrud
+                    Lorem laboris eu magna sunt reprehenderit ut pariatur laborum culpa ea. Nisi anim id eiusmod do laboris anim aliqua esse Lorem mollit. Sit pariatur commodo amet pariatur culpa excepteur ut voluptate sit. Eiusmod duis culpa et amet
+                    proident ullamco do aliquip ipsum in. Consequat tempor anim incididunt dolor exercitation est. Aute est ea deserunt deserunt nisi aliquip ut laboris. Fugiat non exercitation duis do enim sunt voluptate nisi nostrud ut quis. Quis consequat
+                    sint minim ullamco. Fugiat mollit in Lorem officia in. Cupidatat in proident velit anim sit.</p>
+            </article>
+        </section>
+
+        <aside>
+            <div class="widget">
+                <div class="imagen">
+                    <img src="https://images.pexels.com/photos/324658/pexels-photo-324658.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                </div>
+            </div>
+
+            <div class="widget">
+                <div class="imagen">
+                    <img src="https://images.pexels.com/photos/995301/pexels-photo-995301.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                </div>
+            </div>
+
+            <div class="widget">
+                <div class="imagen">
+                    <img src="https://images.pexels.com/photos/935941/pexels-photo-935941.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                </div>
+            </div>
+            <div class="widget">
+                <div class="imagen">
+                    <img src="https://images.pexels.com/photos/863977/pexels-photo-863977.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                </div>
+            </div>
+        </aside>
+
+        <footer>
+            <section class="links">
+                <a href="#">Inicio</a>
+                <a href="#">Conocenos</a>
+                <a href="#">Proyectos</a>
+                <a href="#">Contacto</a>
+            </section>
+
+            <div class="social">
+                <a href="#">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8c/Facebook_Home_logo_old.svg/1024px-Facebook_Home_logo_old.svg.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="http://www.stickpng.com/assets/images/58e9196deb97430e819064f6.png" alt="">
+                </a>
+                <a href="">
+                    <img src="https://www.seeklogo.net/wp-content/uploads/2015/07/instagram-flat-icon-circle-image.png" alt="">
+                </a>
+            </div>
+
+            <div class="footer-copyright">
+                <p>2018 @copyright | Ing. Emanuel Torres C.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+    <script src="js/slider.js"></script>
+</body>
+
+</html>

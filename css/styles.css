@@ -1,0 +1,197 @@
+/* Author: Ing. Torres Emanuel */
+/*Year: 2018 */
+/*Country: Venezuela */
+/*City: Villa de Cura */
+/*State: Aragua */
+@import url("https://fonts.googleapis.com/css?family=Anton");
+@import url("https://fonts.googleapis.com/css?family=Bubblegum+Sans");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-image: url("https://images.pexels.com/photos/993019/pexels-photo-993019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+header {
+  background: rgba(2, 87, 139, 0.43);
+  width: 100%;
+  padding: 20px;
+  /* Flex */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  header .logo {
+    color: #ffffff;
+    font-size: 30px; }
+    header .logo img {
+      width: 50px;
+      vertical-align: top; }
+    header .logo a {
+      color: #ffffff;
+      text-decoration: none;
+      font-family: "Anton", sans-serif;
+      line-height: 50px; }
+
+nav {
+  width: 50%;
+  /*flex */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+  nav a {
+    background: rgba(220, 50, 32, 0.72);
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: "Bubblegum Sans", cursive;
+    font-size: 20px;
+    /*flex */
+    flex-grow: 1; }
+    nav a:hover {
+      transition: background-color 0.5s ease-out;
+      background-color: #dc7820; }
+
+.contenedor {
+  width: 90%;
+  margin: auto;
+  /*FLEX */
+  display: flex;
+  flex-flow: row wrap; }
+
+.main {
+  background: rgba(255, 255, 255, 0.91);
+  padding: 20px;
+  flex: 1; }
+  .main article {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000000; }
+    .main article:nth-last-child(1) {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none; }
+    .main article p {
+      margin-top: 10px; }
+
+aside {
+  background: rgba(230, 126, 34, 0.85);
+  padding: 20px;
+  /*flex */
+  flex: 0 0 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: column; }
+  aside .widget {
+    background: #d35400;
+    height: 150px;
+    margin: 10px; }
+    aside .widget .imagen img {
+      width: 240px;
+      height: 150px; }
+
+footer {
+  background: rgba(2, 87, 139, 0.43);
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  footer .links {
+    background: rgba(220, 50, 32, 0.72);
+    display: flex;
+    flex-wrap: wrap; }
+    footer .links a {
+      flex-grow: 1;
+      color: #ffffff;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      padding: 10px;
+      text-transform: uppercase;
+      font-family: "Bubblegum Sans", cursive;
+      font-size: 20px; }
+      footer .links a:hover {
+        transition: background-color 0.5s ease-out;
+        background-color: #dc7820; }
+  footer .social a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    margin-top: -1px;
+    display: inline-block; }
+    footer .social a img {
+      width: 40px;
+      height: 40px; }
+  footer .footer-copyright {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 35%;
+    color: #ffffff;
+    font-family: "Ubuntu";
+    font-weight: bold; }
+
+/*Mediaquerys */
+@media screen and (max-width: 799px) {
+  .contenedor {
+    flex-direction: column; }
+
+  header {
+    flex-direction: column;
+    padding: 0; }
+    header .logo {
+      margin: 20px 0; }
+    header nav {
+      width: 100%; }
+
+  aside {
+    flex-direction: row;
+    flex: 0; }
+    aside .widget {
+      flex-grow: 1; }
+      aside .widget .imagen img {
+        width: 275px;
+        height: 150px; }
+
+  footer .social {
+    margin-top: 20px;
+    margin-left: 34%; }
+  footer .links {
+    flex-grow: 1; }
+  footer .footer-copyright {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 22%; } }
+@media screen and (max-width: 699px) {
+  aside {
+    flex-direction: column;
+    flex: 1; }
+    aside .widget {
+      flex-grow: 0;
+      width: 255px; }
+
+  footer {
+    flex-grow: 1;
+    justify-content: space-around; }
+    footer .social {
+      margin-top: 20px;
+      margin-left: 5%; }
+      footer .social a {
+        margin-top: 20px; } }
+@media screen and (max-width: 400px) {
+  aside {
+    flex-direction: column; }
+
+  footer {
+    justify-content: space-around; }
+    footer .social a {
+      margin-top: 20px; } }
+
+/*# sourceMappingURL=styles.css.map */
