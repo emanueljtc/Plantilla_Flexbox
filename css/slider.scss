@@ -85,3 +85,9 @@ h1 {
         color: #fff;
     }
 }
+
+@media screen and (max-width: 799px) {
+    .wrap {
+        display: none
+    }
+}
