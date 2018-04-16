@@ -11,9 +11,15 @@
   box-sizing: border-box; }
 
 body {
-  background-image: url("https://images.pexels.com/photos/993019/pexels-photo-993019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-image: url("../img/fondo.jpeg");
   background-repeat: no-repeat;
   background-size: cover; }
+  body::-webkit-scrollbar {
+    width: 7px;
+    background: #000000; }
+  body::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 5px; }
 
 header {
   background: rgba(2, 87, 139, 0.43);
